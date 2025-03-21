@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     padding: 5,
     marginRight: 25,
     borderRadius: 4,
-    borderBlockColor: 'rgba(0,0,0,0.2)',
+    borderColor: 'rgba(0,0,0,0.2)',
     borderWidth: 1,
     color: '#000000',
     fontSize: 15,

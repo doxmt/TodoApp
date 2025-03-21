@@ -2,6 +2,7 @@
   import React from 'react'
   import { StatusBar } from 'expo-status-bar'
 import InputForm from '../components/InputForm'
+import TodoItem from '../components/TodoItem'
 
   const MainScreen = () => {
     return (
@@ -10,6 +11,7 @@ import InputForm from '../components/InputForm'
         <Text style={styles.pageTitle}>ToDo App</Text>
         <View style={styles.listView}>
           <Text style={styles.listTitle}>할 일</Text>
+          <TodoItem />
         </View>
         <View style={styles.seperator} />
 
