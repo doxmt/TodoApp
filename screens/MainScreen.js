@@ -4,6 +4,8 @@
 import InputForm from '../components/InputForm'
 import TodoItem from '../components/TodoItem'
 import { useSelector } from 'react-redux'
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+
 
   const MainScreen = () => {
     const todos = useSelector(state=> state.todo.todos);
