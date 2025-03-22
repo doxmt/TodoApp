@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Alert, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
 import ListIcon from '../assets/list.svg'
 import { TextInput } from 'react-native-gesture-handler'
@@ -15,6 +15,12 @@ const LoginScreen = () => {
       console.log('user', user)      
     } catch (error) {
       console.log(error.message)
+      Alert.alert(
+        "회원가입 도중에 문제가 발생했습니다.",
+        error.message,
+        [{text: '닫기', onPress: ()=> console.log('닫기')}],
+        {cancelable: true}
+      )
     }
   }
   const handleLogin = async () => {
