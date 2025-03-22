@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import ListIcon from '../assets/list.svg'
 import { TextInput } from 'react-native-gesture-handler'
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
+import Toast from 'react-native-toast-message'
 
 const LoginScreen = () => {
   const [email, setEmail] = useState('');
@@ -13,6 +14,11 @@ const LoginScreen = () => {
     try {
       const user = await createUserWithEmailAndPassword(auth, email, password);
       console.log('user', user)      
+      Toast.show({
+        type: 'success',
+        text1: '회원가입 성공',
+        text2: `${email}으로 가입되었습니다.`
+      })
     } catch (error) {
       console.log(error.message)
       Alert.alert(

@@ -8,11 +8,13 @@ import { NavigationContainer } from '@react-navigation/native';
 import LoginScreen from './screens/LoginScreen';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import app from './firebas';
+import Toast from 'react-native-toast-message';
 
 export default function App() {
   const Stack = createNativeStackNavigator();
 
   return (
+    <>
     <GestureHandlerRootView style={{ flex: 1 }}>
       <Provider store={store}>
         <NavigationContainer>
@@ -23,6 +25,8 @@ export default function App() {
         </NavigationContainer>
       </Provider>
     </GestureHandlerRootView>
+    <Toast/>
+    </>
   );
 }
 
