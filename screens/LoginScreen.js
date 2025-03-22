@@ -50,15 +50,16 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   inputContainer: {
-    width: 80,
+    width: '80%',
     marginTop: 15
   },
   input: {
     backgroundColor: 'white',
-    paddingHorizontal: 15,
+    paddingHorizontal: 5,
     paddingVertical: 10,
     borderRadius: 10,
-    marginTop: 5
+    marginTop: 5,
+    
   },
   buttonContainer: {
     width: '50%',

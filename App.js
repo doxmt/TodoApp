@@ -7,7 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import LoginScreen from './screens/LoginScreen';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-
+import app from './firebas';
 
 export default function App() {
   const Stack = createNativeStackNavigator();
